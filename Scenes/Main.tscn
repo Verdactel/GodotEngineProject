@@ -1,7 +1,23 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="AtlasTexture" id=3]
+
+[sub_resource type="Curve" id=1]
+
+[sub_resource type="Gradient" id=2]
+offsets = PoolRealArray( 0, 0.52349, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0.295302, 0.295302, 0.295302, 1, 1, 1, 1, 1 )
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Light2D" type="Light2D" parent="."]
+texture = SubResource( 3 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2( -880.994, -10.6788 )
+points = PoolVector2Array( 453.296, 11.3091, 1320.94, 8.63947 )
+width_curve = SubResource( 1 )
+gradient = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -2.82849, -2.8284 )
