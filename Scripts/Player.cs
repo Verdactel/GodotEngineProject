@@ -6,7 +6,7 @@ public class Player : KinematicBody2D
 	private int score = 0;
 	
 	private int speed = 120;
-	private int jumpForce = 600;
+	private int jumpForce = 300;
 	private int gravity = 800;
 	
 	Vector2 vel = new Vector2();
@@ -20,8 +20,6 @@ public class Player : KinematicBody2D
 	
 	public override void _PhysicsProcess(float delta)
 	{
-		vel.y += delta * gravity;
-		
 		if(Input.IsActionPressed("move_left"))
 		{
 			vel.x = -speed;
@@ -38,6 +36,22 @@ public class Player : KinematicBody2D
 		// var motion = vel * delta;
 		// MoveAndCollide(motion);
 
+		//Applying velocity
 		vel = MoveAndSlide(vel, Vector2.Up);
+		
+		//gravity
+		vel.y += gravity * delta;
+
+		//jump
+		if (Input.IsActionJustPressed("jump") && IsOnFloor())
+		{
+			vel.y -= jumpForce;
+		}
+
+		//Flip sprite direction
+		if(vel.x < 0)
+			sprite.FlipH = true;
+		else if (vel.x > 0)
+			sprite.FlipH = false;
 	}
 }
