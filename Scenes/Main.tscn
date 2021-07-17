@@ -9,19 +9,5 @@
 position = Vector2( 198, 144 )
 
 [node name="grass_tile1" parent="." instance=ExtResource( 2 )]
-position = Vector2( 190, 230 )
-
-[node name="grass_tile2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 250, 230 )
-
-[node name="grass_tile3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 310, 230 )
-
-[node name="grass_tile4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 370, 230 )
-
-[node name="grass_tile5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 430, 230 )
-
-[node name="grass_tile6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 490, 230 )
+position = Vector2( 381.233, 224.703 )
+scale = Vector2( 9, 1 )
