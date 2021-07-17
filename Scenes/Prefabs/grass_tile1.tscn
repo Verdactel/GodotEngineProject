@@ -3,7 +3,7 @@
 [ext_resource path="res://Assets/simplified_platformer/PNG/Tiles/platformPack_tile001.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 31.8182, 31.972 )
+extents = Vector2( 32, 32 )
 
 [node name="grass_tile1" type="KinematicBody2D"]
 
