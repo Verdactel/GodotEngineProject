@@ -5,7 +5,7 @@ public class Player : KinematicBody2D
 {
 	private int score = 0;
 	
-	private int speed = 20;
+	private int speed = 120;
 	private int jumpForce = 600;
 	private int gravity = 800;
 	
@@ -35,7 +35,9 @@ public class Player : KinematicBody2D
 			vel.x = 0;
 		}
 		
-		var motion = vel * delta;
-		MoveAndCollide(motion);
+		// var motion = vel * delta;
+		// MoveAndCollide(motion);
+
+		vel = MoveAndSlide(vel, Vector2.Up);
 	}
 }
