@@ -16,5 +16,5 @@ position = Vector2( 96, 448 )
 
 [node name="grass_tile1" parent="." instance=ExtResource( 2 )]
 visible = false
-position = Vector2( 288, 528 )
-scale = Vector2( 9, 1 )
+position = Vector2( 512, 512 )
+scale = Vector2( 16, 1 )
