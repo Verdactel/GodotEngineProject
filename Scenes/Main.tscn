@@ -12,8 +12,9 @@ scale = Vector2( 1.28482, 1.00503 )
 texture = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 96, 424 )
+position = Vector2( 96, 448 )
 
 [node name="grass_tile1" parent="." instance=ExtResource( 2 )]
-position = Vector2( 288, 504 )
+visible = false
+position = Vector2( 288, 528 )
 scale = Vector2( 9, 1 )
