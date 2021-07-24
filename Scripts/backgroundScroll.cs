@@ -3,7 +3,7 @@ using System;
 
 public class backgroundScroll : Sprite
 {
-    private const float VELOCITY = -2f;
+    private const float VELOCITY = -4f;
     private float g_texture_width = 0;
     public override void _Ready()
     {
